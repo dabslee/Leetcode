@@ -1,3 +1,5 @@
+# Complexity O(n)
+
 def median(lst: list[int]) -> float:
     length = len(lst)
     if length % 2 == 0:

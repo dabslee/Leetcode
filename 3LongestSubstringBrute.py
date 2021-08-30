@@ -1,9 +1,10 @@
+# Complexity O(n^3)
+
 def countFrom(s: str, startIndex: int):
     repeat = ""
-    i = 0
     for i in range(startIndex, len(s)):
         if s[i] in repeat:
-            break
+            return i - startIndex
         else:
             repeat += s[i]
     return i + 1 - startIndex

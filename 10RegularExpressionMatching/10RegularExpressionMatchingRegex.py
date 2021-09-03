@@ -6,4 +6,4 @@ class Solution:
         return rgx.fullmatch(s) != None
 
 sol = Solution()
-print(sol.isMatch("mississippi", "mis*is*p*."))
+print(sol.isMatch("abcdc", ".*c"))

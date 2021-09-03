@@ -1,6 +1,3 @@
-from typing import final
-
-
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
         rows = [""] * numRows

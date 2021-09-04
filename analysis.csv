@@ -1,11 +1,12 @@
-Problem	Solved?	Revisit?	Datetime	Stopwatch	Stopwatch optimization
-1	Yes	No			
-2	Yes	No			
-3	Yes	No	08/29/21 12:00:00 PM		
-4	Yes	No	08/30/21 12:00:00 PM		
-5	Yes	No	08/30/21 12:00:00 PM		
-6	Yes	No	09/03/21 12:00:00 PM		
-7	Yes	No	09/03/21 12:00:00 PM		
-8	Yes	No	09/03/21 12:00:00 PM		
-9	Yes	No	09/03/21 12:00:00 PM		
-10	Yes	Yes	09/03/21 12:00:00 PM		
+Problem,Solved?,Revisit?,Difficulty,Date,Stopwatch,Stopwatch optimization,Better optimization?
+1,Yes,No,Easy,,,,
+2,Yes,No,Medium,,,,
+3,Yes,No,Medium,8/29/2021,,,
+4,Yes,No,Hard,8/30/2021,,,
+5,Yes,No,Medium,8/30/2021,,,
+6,Yes,No,Medium,9/3/2021,,,
+7,Yes,No,Easy,9/3/2021,,,
+8,Yes,No,Medium,9/3/2021,,,
+9,Yes,No,Easy,9/3/2021,,,
+10,Yes,Yes,Hard,9/3/2021,,,
+11,Yes,No,Medium,9/4/2021,29.1,,Yes

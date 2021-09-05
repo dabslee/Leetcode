@@ -52,38 +52,37 @@ matplotlib.rc('axes',edgecolor='gray')
 # import data
 df = pd.read_csv('analysis.csv')
 
-if False:
-    # solved problems by difficulty
-    agr_pie(
-        df["Difficulty"],
-        labels=["Easy", "Medium", "Hard"],
-        colors=[Colors.GREEN, Colors.YELLOW, Colors.RED],
-        title="Solved problems by difficulty",
-    )
-    saveplot("pie_difficulty.png")
+# solved problems by difficulty
+agr_pie(
+    df["Difficulty"],
+    labels=["Easy", "Medium", "Hard"],
+    colors=[Colors.GREEN, Colors.YELLOW, Colors.RED],
+    title="Solved problems by difficulty",
+)
+saveplot("pie_difficulty.png")
 
-    # does a more optimized solution exist?
-    agr_pie(
-        df["Better optimization?"],
-        labels=["Yes", "No"],
-        colors=[Colors.RED, Colors.GREEN],
-        title="Does a more optimized solution exist?",
-    )
-    saveplot("pie_optimization.png")
+# does a more optimized solution exist?
+agr_pie(
+    df["Better optimization?"],
+    labels=["Yes", "No"],
+    colors=[Colors.RED, Colors.GREEN],
+    title="Does a more optimized solution exist?",
+)
+saveplot("pie_optimization.png")
 
-    # problems needing revisiting
-    agr_pie(
-        df["Revisit?"],
-        labels=["Yes", "No"],
-        colors=[Colors.RED, Colors.GREEN],
-        title="Does the problem warrant revisiting?",
-    )
-    saveplot("pie_revisiting.png")
+# problems needing revisiting
+agr_pie(
+    df["Revisit?"],
+    labels=["Yes", "No"],
+    colors=[Colors.RED, Colors.GREEN],
+    title="Does the problem warrant revisiting?",
+)
+saveplot("pie_revisiting.png")
 
 # Time taken to solve problem by difficulty
 plt.figure(figsize=(13, 4))
-plt.hist(df[df["Difficulty"]=="Easy"]["Stopwatch"], bins=range(0,120,5), facecolor=Colors.GREEN, density=1, alpha=0.5)
-plt.hist(df[df["Difficulty"]=="Medium"]["Stopwatch"], bins=range(0,120,5), facecolor=Colors.YELLOW, density=1, alpha=0.5)
+plt.hist(df[df["Difficulty"]=="Easy"]["Stopwatch"], bins=range(0,130,5), facecolor=Colors.GREEN, density=1, alpha=0.5)
+plt.hist(df[df["Difficulty"]=="Medium"]["Stopwatch"], bins=range(0,130,5), facecolor=Colors.YELLOW, density=1, alpha=0.5)
 # plt.hist(df[df["Difficulty"]=="Hard"]["Stopwatch"], bins=range(0,120,5), facecolor=Colors.RED, density=1, alpha=0.5)
 plt.tight_layout()
 text_objs = []

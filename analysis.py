@@ -70,14 +70,14 @@ agr_pie(
 )
 saveplot("pie_optimization.png")
 
-# problems needing revisiting
+# problems solved out of attempted
 agr_pie(
-    df["Revisit?"],
-    labels=["Yes", "No"],
-    colors=[Colors.RED, Colors.GREEN],
-    title="Does the problem warrant revisiting?",
+    ["Solved" if i < len(df[df["Solved?"]=="Yes"]) else "Failed" for i in range(len(df))],
+    labels=["Solved", "Failed"],
+    colors=[Colors.GREEN, Colors.RED],
+    title="How many solved of those attempted?",
 )
-saveplot("pie_revisiting.png")
+saveplot("pie_attempt.png")
 
 # Time taken to solve problem by difficulty
 plt.figure(figsize=(13, 4))

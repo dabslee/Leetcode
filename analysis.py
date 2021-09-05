@@ -81,6 +81,7 @@ if False:
     saveplot("pie_revisiting.png")
 
 # Time taken to solve problem by difficulty
+plt.figure(figsize=(13, 4))
 plt.hist(df[df["Difficulty"]=="Easy"]["Stopwatch"], bins=range(0,120,5), facecolor=Colors.GREEN, density=1, alpha=0.5)
 plt.hist(df[df["Difficulty"]=="Medium"]["Stopwatch"], bins=range(0,120,5), facecolor=Colors.YELLOW, density=1, alpha=0.5)
 # plt.hist(df[df["Difficulty"]=="Hard"]["Stopwatch"], bins=range(0,120,5), facecolor=Colors.RED, density=1, alpha=0.5)
@@ -93,5 +94,4 @@ for t in text_objs:
     plt.setp(t, color='gray')
 plt.tick_params(axis='x', colors='gray')
 plt.tick_params(axis='y', colors='gray')
-plt.gca().set_aspect(250)
 saveplot("hist.png")

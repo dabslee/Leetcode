@@ -49,4 +49,4 @@ agr_pie(
     colors=[Colors.GREEN, Colors.YELLOW, Colors.RED],
     background=Colors.BACKGROUND
 )
-plt.savefig('analysis_visualizations/pie_difficulty.png')
+plt.savefig('analysis_visualizations/pie_difficulty.png', transparent=True)

@@ -16,4 +16,3 @@ This is a repository of my solutions to the [Leetcode](https://leetcode.com/prob
 A list of problems to revisit and why:
  - Problem 10: Completed with native Python regex, but did not solve without native regex as was likely the intent of the problem
  - Problem 15: Unable to figure out fully optimized ThreeSum algorithm
- - Problem 16: Unable to solve within optimization requirements

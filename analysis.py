@@ -15,9 +15,8 @@ class Colors:
     BACKGROUND = (0.133, 0.153, 0.18) if darkmode else None
 
 # creates a pie chart from an iterable
-def agr_pie(lst, labels=None, colors=None, background=None):
-    if background != None:
-        plt.figure().patch.set_facecolor(background)
+def agr_pie(lst, labels=None, colors=None, title=None):
+    plt.figure().patch.set_facecolor(Colors.BACKGROUND)
     lst = list(lst)
     if labels == None:
         labels = list(set(lst))
@@ -28,9 +27,19 @@ def agr_pie(lst, labels=None, colors=None, background=None):
         ),
         colors = colors,
         labeldistance = 0.5,
-        
     )
     plt.tight_layout()
+    title_obj = plt.title(title, fontweight="bold")
+    plt.setp(title_obj, color='gray')
+
+# saves current fig to a given file
+def saveplot(filename):
+    plt.savefig(
+        f'analysis_visualizations/{filename}',
+        transparent=True,
+        bbox_inches = 'tight',
+        pad_inches=0
+    )
 
 # global formatting
 matplotlib.rcParams['text.color'] = 'w'
@@ -47,6 +56,24 @@ agr_pie(
     df["Difficulty"],
     labels=["Easy", "Medium", "Hard"],
     colors=[Colors.GREEN, Colors.YELLOW, Colors.RED],
-    background=Colors.BACKGROUND
+    title="Solved problems by difficulty",
 )
-plt.savefig('analysis_visualizations/pie_difficulty.png', transparent=True)
+saveplot("pie_difficulty.png")
+
+# does a more optimized solution exist?
+agr_pie(
+    df["Better optimization?"],
+    labels=["Yes", "No"],
+    colors=[Colors.RED, Colors.GREEN],
+    title="Does a more optimized solution exist?",
+)
+saveplot("pie_optimization.png")
+
+# problems needing revisiting
+agr_pie(
+    df["Revisit?"],
+    labels=["Yes", "No"],
+    colors=[Colors.RED, Colors.GREEN],
+    title="Does the problem warrant revisiting?",
+)
+saveplot("pie_revisiting.png")

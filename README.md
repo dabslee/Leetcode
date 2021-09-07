@@ -1,7 +1,7 @@
 # Leetcode solutions
 
-[![](https://img.shields.io/badge/Problems_solved-17-2ea44f)]()
-[![](https://img.shields.io/badge/Average_time_per_problem-36.52_min-2ea44f)]()
+[![](https://img.shields.io/badge/Problems_solved-16-2ea44f)]()
+[![](https://img.shields.io/badge/Average_time_per_problem-23.41_min-2ea44f)]()
 
 This is a repository of my solutions to the [Leetcode](https://leetcode.com/problems/) problems in order.
 

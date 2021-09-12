@@ -54,7 +54,7 @@ df = pd.read_csv('analysis.csv')
 
 # solved problems by difficulty
 agr_pie(
-    df[df["Difficulty"]!="Hard"]["Difficulty"],
+    df[df["Solved?"]=="Yes"]["Difficulty"],
     labels=["Easy", "Medium", "Hard"],
     colors=[Colors.GREEN, Colors.YELLOW, Colors.RED],
     title="Solved problems by difficulty",

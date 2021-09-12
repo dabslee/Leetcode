@@ -1,4 +1,4 @@
-Problem,Solved?,Difficulty,Date,Stopwatch,Stopwatch optimization,No
+Problem,Solved?,Difficulty,Date,Stopwatch,Stopwatch optimization,Better optimization?
 1,Yes,Easy,,,,Yes
 2,Yes,Medium,,,2.58,No
 3,Yes,Medium,8/29/2021,,,No
@@ -21,3 +21,4 @@ Problem,Solved?,Difficulty,Date,Stopwatch,Stopwatch optimization,No
 20,Yes,Easy,9/7/2021,5.03,,No
 21,Yes,Easy,9/7/2021,6.56,,No
 22,Yes,Medium,9/11/2021,15.14,,No
+23,Yes,Hard,9/12/2021,9.33,51.59,Yes

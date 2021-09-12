@@ -83,7 +83,7 @@ saveplot("pie_attempt.png")
 plt.figure(figsize=(13, 4))
 plt.hist(df[df["Difficulty"]=="Easy"]["Stopwatch"], bins=range(0,130,5), facecolor=Colors.GREEN, density=1, alpha=0.5)
 plt.hist(df[df["Difficulty"]=="Medium"]["Stopwatch"], bins=range(0,130,5), facecolor=Colors.YELLOW, density=1, alpha=0.5)
-# plt.hist(df[df["Difficulty"]=="Hard"]["Stopwatch"], bins=range(0,120,5), facecolor=Colors.RED, density=1, alpha=0.5)
+plt.hist(df[df["Difficulty"]=="Hard"]["Stopwatch"], bins=range(0,120,5), facecolor=Colors.RED, density=1, alpha=0.5)
 plt.tight_layout()
 text_objs = []
 text_objs.append(plt.title("Histogram of time taken to solve problem by difficulty", fontweight="bold"))
